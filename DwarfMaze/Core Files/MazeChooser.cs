@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DwarfMaze.Core_Files
 {
-    public static class MazeChooser
+    public static class DialogueHandler
     {
         #region Maze Choosing
 

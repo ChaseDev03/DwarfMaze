@@ -18,7 +18,7 @@ namespace DwarfMaze
         public static void InitializeMaze()
         {
             //Let user choose a maze
-            string mazeDataPath = MazeChooser.GetMazeToLoad();
+            string mazeDataPath = DialogueHandler.GetMazeToLoad();
 
             //Not using a Stream, because File.ReadAllLines() does use a Stream anyway, while also should on a lower-level, which could potentially be faster
             maze = new Maze(File.ReadAllLines(mazeDataPath));
@@ -102,7 +102,7 @@ namespace DwarfMaze
                 walker.AutoReset = false;
 
                 Console.SetCursorPosition(0, maze.MapSize.y + travelers.Count);
-                Console.WriteLine("Všichni trpaslíci jsou v cíli.\nStiskněte jakékoli tlačítko pro ukončení programu.");
+                Console.WriteLine("All dwarfs are in the FINISH.\nPress any button to end the program.");
             }
         }
 

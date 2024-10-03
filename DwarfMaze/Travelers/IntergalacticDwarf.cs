@@ -19,7 +19,7 @@ namespace DwarfMaze.Travelers
 
         private CustomTimer walker;
 
-        private string travelerName = "Intergalaktický trpaslík";
+        private string travelerName = "Intergalactic Dwarf";
         private string rotationASCII = "→";
 
         private int timeWaited;
@@ -118,13 +118,13 @@ namespace DwarfMaze.Travelers
 
             if (!ReachedEnd)
             {
-                Console.WriteLine(placeInOrder + ". " + travelerName + " nemůže najít svoji černou díru na pozici " + position.x + ", " + position.y);
+                Console.WriteLine(placeInOrder + ". " + travelerName + " has trouble finding his black hole at position " + position.x + ", " + position.y);
 
                 Console.ResetColor();
                 return 1;
             }
 
-            Console.WriteLine(placeInOrder + ". " + travelerName + " se teleportoval do CÍLE na pozici " + position.x + ", " + position.y);
+            Console.WriteLine(placeInOrder + ". " + travelerName + " teleported to the FINISH at position " + position.x + ", " + position.y);
 
             Console.ResetColor();
 

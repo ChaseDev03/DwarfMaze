@@ -18,7 +18,7 @@ namespace DwarfMaze.Travelers
 
         private ConsoleColor travelerColor = ConsoleColor.Blue;
 
-        private string travelerName = "Paranoidní trpaslík";
+        private string travelerName = "Paranoid Dwarf";
         private string rotationASCII = "→↓←↑";
 
         private int degreesToRotate = -90;
@@ -141,13 +141,13 @@ namespace DwarfMaze.Travelers
 
             if (!ReachedEnd)
             {
-                Console.WriteLine(placeInOrder + ". " + travelerName + " je na pozici " + position.x + ", " + position.y);
+                Console.WriteLine(placeInOrder + ". " + travelerName + " is at position " + position.x + ", " + position.y);
 
                 Console.ResetColor();
                 return 1;
             }
 
-            Console.WriteLine(placeInOrder + ". " + travelerName + " je v CÍLI na pozici " + position.x + ", " + position.y);
+            Console.WriteLine(placeInOrder + ". " + travelerName + " is in the FINISH at position " + position.x + ", " + position.y);
 
             Console.ResetColor();
 
